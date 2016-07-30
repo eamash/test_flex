@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7330b72-9156-4481-8330-765eb075c5f2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.mxml" afterPath="$PROJECT_DIR$/src/Main.mxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Smile.as" afterPath="$PROJECT_DIR$/src/Smile.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_flex.iml" afterPath="$PROJECT_DIR$/test_flex.iml" />
     </list>
     <ignored path="test_flex.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,16 +31,14 @@
       <file leaf-file-name="Main.mxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-19">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            <state relative-caret-position="95">
+              <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
               <folding>
-                <marker date="1469868078336" expanded="true" signature="359:901" ph="{...}" />
-                <marker date="1469868078336" expanded="true" signature="578:731" ph="//..." />
-                <marker date="1469868078336" expanded="true" signature="777:826" ph="{...}" />
-                <marker date="1469868078336" expanded="true" signature="844:891" ph="{...}" />
-                <marker date="1469868078336" expanded="true" signature="968:1048" ph="{...}" />
-                <marker date="1469868078336" expanded="true" signature="1113:1256" ph="{...}" />
-                <marker date="1469868078336" expanded="true" signature="1327:1569" ph="{...}" />
+                <marker date="1469874153811" expanded="true" signature="366:803" ph="{...}" />
+                <marker date="1469874153811" expanded="true" signature="585:738" ph="//..." />
+                <marker date="1469874153811" expanded="true" signature="870:950" ph="{...}" />
+                <marker date="1469874153811" expanded="true" signature="1015:1142" ph="{...}" />
+                <marker date="1469874153811" expanded="true" signature="1212:1452" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -46,8 +47,8 @@
       <file leaf-file-name="Smile.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Smile.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="209">
+              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -150,28 +151,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test_flex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test_flex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="out" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="production" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test_flex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -180,13 +159,13 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.3968254" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="C:/dev/Flex/runtimes/player/11.1/win/FlashPlayerDebugger.exe" />
+    <property name="last_opened_file_path" value="C:/dev/flex_sdk_4.6/runtimes/player/11.1/win/FlashPlayerDebugger.exe" />
   </component>
   <component name="RecentsManager">
     <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
@@ -922,7 +901,7 @@
           <option name="browser" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
           <option name="launcherType" value="Browser" />
           <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="C:/dev/Flex/runtimes/player/11.1/win/FlashPlayerDebugger.exe" />
+          <option name="playerPath" value="C:/dev/flex_sdk_4.6/runtimes/player/11.1/win/FlashPlayerDebugger.exe" />
         </LauncherParameters>
       </option>
       <option name="mobileRunTarget" value="Emulator" />
@@ -956,12 +935,12 @@
       <option name="presentableId" value="Default" />
       <updated>1469853315267</updated>
       <workItem from="1469853316735" duration="14544000" />
-      <workItem from="1469869642296" duration="98000" />
+      <workItem from="1469869642296" duration="3454000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14642000" />
+    <option name="totallyTimeSpent" value="17998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1048,13 +1027,11 @@
         <state relative-caret-position="95">
           <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
           <folding>
-            <marker date="1469868078336" expanded="true" signature="359:901" ph="{...}" />
-            <marker date="1469868078336" expanded="true" signature="578:731" ph="//..." />
-            <marker date="1469868078336" expanded="true" signature="777:826" ph="{...}" />
-            <marker date="1469868078336" expanded="true" signature="844:891" ph="{...}" />
-            <marker date="1469868078336" expanded="true" signature="968:1048" ph="{...}" />
-            <marker date="1469868078336" expanded="true" signature="1113:1256" ph="{...}" />
-            <marker date="1469868078336" expanded="true" signature="1327:1569" ph="{...}" />
+            <marker date="1469874153811" expanded="true" signature="366:803" ph="{...}" />
+            <marker date="1469874153811" expanded="true" signature="585:738" ph="//..." />
+            <marker date="1469874153811" expanded="true" signature="870:950" ph="{...}" />
+            <marker date="1469874153811" expanded="true" signature="1015:1142" ph="{...}" />
+            <marker date="1469874153811" expanded="true" signature="1212:1452" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1078,6 +1055,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="1469" column="13" selection-start-line="1469" selection-start-column="13" selection-end-line="1469" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,36 +1073,142 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/dev/Flex/frameworks/projects/mx/src/mx/styles/metadata/ContainerBackgroundStyles.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="56" column="7" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://C:/dev/Flex/frameworks/projects/framework/src/mx/core/UIComponent.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="9136" column="24" selection-start-line="9136" selection-start-column="24" selection-end-line="9136" selection-end-column="24" />
+        <state relative-caret-position="3015">
+          <caret line="2921" column="14" selection-start-line="2921" selection-start-column="14" selection-end-line="2921" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Smile.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="209">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.mxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        <state relative-caret-position="95">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
           <folding>
-            <marker date="1469868078336" expanded="true" signature="359:901" ph="{...}" />
-            <marker date="1469868078336" expanded="true" signature="578:731" ph="//..." />
-            <marker date="1469868078336" expanded="true" signature="777:826" ph="{...}" />
-            <marker date="1469868078336" expanded="true" signature="844:891" ph="{...}" />
-            <marker date="1469868078336" expanded="true" signature="968:1048" ph="{...}" />
-            <marker date="1469868078336" expanded="true" signature="1113:1256" ph="{...}" />
-            <marker date="1469868078336" expanded="true" signature="1327:1569" ph="{...}" />
+            <marker date="1469874153811" expanded="true" signature="366:803" ph="{...}" />
+            <marker date="1469874153811" expanded="true" signature="585:738" ph="//..." />
+            <marker date="1469874153811" expanded="true" signature="870:950" ph="{...}" />
+            <marker date="1469874153811" expanded="true" signature="1015:1142" ph="{...}" />
+            <marker date="1469874153811" expanded="true" signature="1212:1452" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3968254" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3968254" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>ast (v2.3.0, ruby-2.2.5-p319) [gem]</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3968254" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Flex SDK 4.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3968254" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>test_flex</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3968254" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>flex</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.34713763" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3968254" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
