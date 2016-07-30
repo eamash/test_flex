@@ -3,7 +3,7 @@
                xmlns:s="library://ns.adobe.com/flex/spark"
                xmlns:mx="library://ns.adobe.com/flex/mx"
                xmlns:my="*"
-               resize="moveSmileToCenter(true)">
+               resize="moveSmileToCenter(smile.happy)">
     <fx:Script><![CDATA[
         private function onAppMouseMove(event:MouseEvent):void {
             // перемещаем smile за курсором, причем так, чтобы курсор был в "центре масс" smile
@@ -11,12 +11,7 @@
             smile.y = event.stageY - smile.height / 2;
             // смена состояния происходит при пересечении "центра масс" smile середины экрана, для отслеживания центра
             // можно использовать event.stageX
-            if (event.stageX <= (width / 2)) {
-                smile.setHappy();
-            }
-            else {
-                smile.setSad();
-            }
+            smile.happy = event.stageX <= (width / 2);
         }
 
         private function onSmileMouseDown(event:MouseEvent):void {
@@ -25,12 +20,12 @@
 
         private function onSmileMouseUp(event:MouseEvent):void {
             removeEventListener(MouseEvent.MOUSE_MOVE, onAppMouseMove);
-            moveSmileToCenter(event.stageX <= (width / 2));
+            moveSmileToCenter(smile.happy);
         }
 
-        private function moveSmileToCenter(leftOrRight:Boolean):void {
+        private function moveSmileToCenter(happyOrSad:Boolean):void {
             smileMove.end();
-            var mult: int = leftOrRight ? 1 : 3;
+            var mult:int = happyOrSad ? 1 : 3;
             smileMove.xTo = width / 4 * mult - smile.width / 2;
             smileMove.yTo = height / 2 - smile.height / 2;
             smileMove.play();
@@ -45,5 +40,6 @@
     <mx:VBox left="0" top="0" width="50%" height="100%" backgroundColor="0x9aff35"/>
     <mx:VBox right="0" bottom="0" width="50%" height="100%" backgroundColor="0xff705a"/>
 
-    <my:Smile id="smile" mouseDown="onSmileMouseDown(event)" mouseUp="onSmileMouseUp(event)" creationComplete="moveSmileToCenter(true)"/>
+    <my:Smile id="smile" mouseDown="onSmileMouseDown(event)" mouseUp="onSmileMouseUp(event)"
+              creationComplete="moveSmileToCenter(smile.happy)" />
 </s:Application>

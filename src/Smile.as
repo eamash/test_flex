@@ -5,26 +5,35 @@ package {
 
 import mx.controls.Image;
 
-public class Smile extends Image {
+public class Smile extends Image
+{
     [Embed(source="sad.png")]
-    [Bindable]
-    private  var _sad: Class;
+    private var _sadImage:Class;
 
     [Embed(source="happy.png")]
-    [Bindable]
-    private var _happy: Class;
+    private var _happyImage:Class;
 
-    public function Smile() {
+    private var _happy:Boolean;
+
+    public function Smile()
+    {
         super();
-        source = _happy;
+        _happy = true;
+        source = _happyImage;
     }
 
-    public function setSad(): void {
-        source = _sad;
+    public function get happy():Boolean
+    {
+        return _happy;
     }
 
-    public function setHappy(): void {
-        source = _happy;
+    public function set happy(value:Boolean):void
+    {
+        if (_happy == value) {
+            return;
+        }
+        _happy = value;
+        source = _happy ? _happyImage : _sadImage;
     }
 }
 }
