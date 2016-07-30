@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+               xmlns:s="library://ns.adobe.com/flex/spark"
+               xmlns:mx="library://ns.adobe.com/flex/mx"
+               xmlns:my="*"
+               resize="moveSmileToCenter(true)">
+    <fx:Script><![CDATA[
+        private function onAppMouseMove(event:MouseEvent):void {
+            // перемещаем smile за курсором, причем так, чтобы курсор был в "центре масс" smile
+            smile.x = event.stageX - smile.width / 2;
+            smile.y = event.stageY - smile.height / 2;
+            // смена состояния происходит при пересечении "центра масс" smile середины экрана, для отслеживания центра
+            // можно использовать event.stageX
+            if (event.stageX <= (width / 2)) {
+                smile.setHappy();
+            }
+            else {
+                smile.setSad();
+            }
+        }
+
+        private function onSmileMouseDown(event:MouseEvent):void {
+            addEventListener(MouseEvent.MOUSE_MOVE, onAppMouseMove);
+        }
+
+        private function onSmileMouseUp(event:MouseEvent):void {
+            removeEventListener(MouseEvent.MOUSE_MOVE, onAppMouseMove);
+            moveSmileToCenter(event.stageX <= (width / 2));
+        }
+
+        private function moveSmileToCenter(leftOrRight:Boolean):void {
+            smileMove.end();
+            var mult: int = leftOrRight ? 1 : 3;
+            smileMove.xTo = width / 4 * mult - smile.width / 2;
+            smileMove.yTo = height / 2 - smile.height / 2;
+            smileMove.play();
+        }
+        ]]>
+    </fx:Script>
+
+    <fx:Declarations>
+        <mx:Move id="smileMove" target="{smile}"/>
+    </fx:Declarations>
+
+    <mx:VBox left="0" top="0" width="50%" height="100%" backgroundColor="0x9aff35"/>
+    <mx:VBox right="0" bottom="0" width="50%" height="100%" backgroundColor="0xff705a"/>
+
+    <my:Smile id="smile" mouseDown="onSmileMouseDown(event)" mouseUp="onSmileMouseUp(event)" creationComplete="moveSmileToCenter(true)"/>
+</s:Application>
