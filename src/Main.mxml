@@ -3,8 +3,16 @@
                xmlns:s="library://ns.adobe.com/flex/spark"
                xmlns:mx="library://ns.adobe.com/flex/mx"
                xmlns:my="*"
-               resize="moveSmileToCenter(smile.happy)">
+               resize="onAppResize(event)">
     <fx:Script><![CDATA[
+        import mx.events.ResizeEvent;
+
+        private function onAppResize(event:ResizeEvent):void {
+            if (smile != null) {
+                moveSmileToCenter(smile.happy);
+            }
+        }
+
         private function onAppMouseMove(event:MouseEvent):void {
             // перемещаем smile за курсором, причем так, чтобы курсор был в "центре масс" smile
             smile.x = event.stageX - smile.width / 2;
